@@ -345,6 +345,7 @@ _prepare_custom_keyring() {
     local build_gpgdir="${work_dir}/pacman-gnupg"
     local keydir="${profile}/airootfs/usr/local/share/pacman/custom-keys"
     local keys=(
+        "froggies.gpg:B1EA1088A94111E0CA8E9C342ECA83EE7399A10E"
         "ironrobin.gpg:1B623AEF2DC40C944C3A51E66ED02751500A833A"
         "drzee.gpg:9B2C213B21883BB65CE2FB900CF25682E6BA0751"
     )

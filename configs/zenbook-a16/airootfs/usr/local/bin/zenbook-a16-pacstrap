@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+pacstrap "$@"
+
+target="$1"
+cp /usr/local/bin/zenbook-a16-repo-setup "$target/usr/local/bin/"
+arch-chroot "$target" /usr/local/bin/zenbook-a16-repo-setup
+rm -f "$target/usr/local/bin/zenbook-a16-repo-setup"

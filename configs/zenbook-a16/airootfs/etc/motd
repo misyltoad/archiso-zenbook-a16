@@ -10,4 +10,16 @@ via the convenience script [35mInstallation_guide[0m.
 
 When it comes time to pacstrap, you may instead run the convenience script [35mzenbook-a16-pacstrap[0m.
 
+[38;2;23;147;209marchinstall[0m guide for [38;2;23;147;209mAsus Zenbook A16[0m 
+ - Ensure Unified Kernel Images is OFF
+ - Use grub bootloader
+ - virtualbox graphics driver (!!!) thats plain mesa
+ - Ensure you have the extra packages: 
+     linux-zenbook-a16
+     linux-zenbook-a16-dtbs
+     linux-firmware-qcom
+     linux-firmware-zenbook-a16
+ - When you are done, go into the install and edit your /etc/default/grub to have " pd_ignore_unused clk_ignore_unused arm64.nopauth systemd.mask=tpm2.target"
+ - grub-mkconfig -o /boot/grub/grub.cfg
+
 [41m [41m [41m [40m [44m [40m [41m [46m [45m [41m [46m [43m [41m [44m [45m [40m [44m [40m [41m [44m [41m [41m [46m [42m [41m [44m [43m [41m [45m [40m [40m [44m [40m [41m [44m [42m [41m [46m [44m [41m [46m [47m [0m

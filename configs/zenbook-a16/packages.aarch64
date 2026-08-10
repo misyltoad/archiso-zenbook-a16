@@ -51,6 +51,8 @@ linux-zenbook-a16
 linux-zenbook-a16-dtbs
 linux-atm
 linux-firmware-qcom
+linux-firmware-atheros
+linux-firmware-zenbook-a16
 livecd-sounds
 lsscsi
 lvm2
